@@ -36,20 +36,25 @@ To package the project run:
 mvn clean spring-boot:run
 
 CREATE COMPANY WITH OWNERS:
+
 curl -i -X POST -H "Content-Type:application/json" http://localhost:8080/companies -d '{"name": "Company1","address": "Address1","city": "City1",
 "country": "Country1","email": "Email1","phone": "1234567","owner": [{"name": "Owner A2"},{"name": "Owner A1"},{"name": "Owner A3"}]}'
 
 RETRIEVE COMPANY:
+
 curl http://localhost:8080/company/{idCompanyCreated}
 
 LIST COMPANIES:
+
 curl http://localhost:8080/companies
 
 UPDATE COMPANY:
+
 curl -i -X PUT -H "Content-Type:application/json" http://localhost:8080/companies/{idCompanyCreated} -d '{"name": "Company1","address": "Address1","city": "City1",
 "country": "CountryOk","email": "Email1","phone": "1234567","owner": [{"name": "Owner A2"},{"name": "Owner A1"},{"name": "Owner A3"}]}'
 
 DELETE COMPANY:
+
 curl -i -X DELETE http://localhost:8080/companies/{idCompanyCreated}
 
 
