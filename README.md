@@ -1,4 +1,4 @@
-# Project Title
+# Spring Boot REST
 
 Tiny Crud REST example using Spring Boot, jpa, H2 and Maven
 
