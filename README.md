@@ -12,11 +12,11 @@ JDK 8 and JAVA_HOME environment variable set
 
 Clone the repository:
 
-    git clone https://github.com/kolorobot/spring-boot-thymeleaf
+    git clone https://github.com/mdejuan/spring-boot-rest-crud
 
 Navigate to the newly created folder:
 
-    cd spring-boot-thymeleaf
+    cd spring-boot-rest-crud
 
 Run the project with:
 
@@ -32,6 +32,8 @@ To package the project run:
     mvn clean install
 
 ### Running the tests with cURL End points
+
+mvn clean spring-boot:run
 
 CREATE COMPANY WITH OWNERS:
 curl -i -X POST -H "Content-Type:application/json" http://localhost:8080/companies -d '{"name": "Company1","address": "Address1","city": "City1",
@@ -80,4 +82,4 @@ How can you make the service redundant?
 What considerations should you do?
 
 - If the app grows in complexity is good to add service or facade layer for business and transactional purposes.
-- Add any kind of logging capability would be good. 
+- Add any kind of logging capability would be good.
