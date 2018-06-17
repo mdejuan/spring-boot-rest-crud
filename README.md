@@ -31,7 +31,7 @@ To package the project run:
 
     mvn clean install
 
-### Running the tests with cURL End points
+### Running the tests with cURL end points (replace localhost by https://stormy-waters-98152.herokuapp.com for Heroku cloud)
 
 mvn clean spring-boot:run
 
