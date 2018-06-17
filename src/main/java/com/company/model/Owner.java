@@ -23,7 +23,7 @@ public class Owner {
 	
 	@JsonIgnore
 	@ManyToOne(cascade=CascadeType.ALL)
-	@JoinColumn(name = "company_id", nullable = false, updatable = false, insertable = true)
+	@JoinColumn(name = "company_id", updatable = false, insertable = true)
 	private Company company;
 	
 	public Owner()
